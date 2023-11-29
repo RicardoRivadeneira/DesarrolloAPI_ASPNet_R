@@ -11,7 +11,7 @@ namespace RESTAPI_CORE.Controllers
 {
     [EnableCors("ReglasCors")]
     [Route("api/[controller]")]
-    //[Authorize]
+    [Authorize]
     [ApiController]
     public class ProductoController : ControllerBase
     {
