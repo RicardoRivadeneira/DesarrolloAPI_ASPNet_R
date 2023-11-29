@@ -8,12 +8,18 @@ Este proyecto utiliza una API RESTful creada con ASP.NET Core y basada en un tut
 
 ### Conexión a la Base de Datos
 
-El tutorial proporcionó el código necesario para establecer la conexión con la base de datos Oracle a través de un contenedor Docker. Esto permite realizar operaciones CRUD en la tabla de productos desde la API.
+###Se realizó una conexión con la base de datos de SQL Server a través de un contenedor Docker. Esto permite realizar operaciones CRUD en la tabla de productos desde la API.###
+
+<img src="Evidencias/Evidencia_BD_Lista.png" alt="Evidencia1" width="600"/><br>
 
 ### Seguridad y Autenticación
 
-La seguridad en la API se ha implementado utilizando middleware y tokens JWT (JSON Web Tokens). Para acceder a los datos de productos a través de solicitudes GET, primero se debe solicitar un token de autenticación a través de una solicitud POST. Una vez obtenido el token, se debe incluir en la cabecera de autorización de las solicitudes GET para obtener acceso a los datos protegidos.
+La seguridad en la API se ha implementado utilizando middleware y tokens JWT (JSON Web Tokens). Para acceder a los datos de productos a través de solicitudes GET.
 
+1. Primero se debe solicitar un token de autenticación a través de una solicitud POST.
+  <img src="Evidencias/Evidencia_API_Necesita_Token.png" alt="Evidencia1" width="600"/><br>
+2. Una vez obtenido el token, se debe incluir en la cabecera de autorización de las solicitudes GET para obtener acceso a los datos protegidos.
+  <img src="Evidencias/Evidencia_Peticion_ParaObtenerToken.png" alt="Evidencia1" width="600"/><br>
 ### Uso de Thunder en Visual Studio Code
 
 La extensión Thunder en Visual Studio Code facilita la realización de solicitudes HTTP a la API. Es especialmente útil para simular las solicitudes POST y GET necesarias para la autenticación y la obtención de datos.
@@ -54,6 +60,8 @@ El objetivo de este proyecto es desarrollar una API segura con ASP.NET Core, imp
 - **PUT /api/producto/editar**: Edita un producto existente.
 - **DELETE /api/producto/eliminar/{idProducto}**: Elimina un producto por su ID.
 
+  <img src="Evidencias/Evidencia_FuncionamientoGetPagina.png" alt="Evidencia1" width="600"/><br>
+
 ### Requisitos de Autenticación
 
 - La API requiere autenticación mediante tokens JWT.
@@ -67,12 +75,9 @@ El objetivo de este proyecto es desarrollar una API segura con ASP.NET Core, imp
 ### Ejemplo de solicitud POST para obtener token:
 
 ```http
-POST /api/auth HTTP/1.1
-Content-Type: application/json
-
 {
-  "username": "ejemplo",
-  "password": "contraseña"
+  "correo": "c@gmail.com",
+  "clave": "123"
 }
 ```
 ## Configuración en appsettings.json
