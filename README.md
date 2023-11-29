@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto utiliza una API RESTful creada con ASP.NET Core y basada en un tutorial del canal de YouTube Codigo Estudiante. La API está diseñada para gestionar productos almacenados en una base de datos Oracle que se encuentra en un contenedor Docker.
+Este proyecto utiliza una API RESTful creada con ASP.NET Core y basada en un tutorial del canal de YouTube Codigo Estudiante. La API está diseñada para gestionar productos almacenados en una base de datos de SQL Server que se encuentra en un contenedor Docker.
 
 ## Uso de la API
 
