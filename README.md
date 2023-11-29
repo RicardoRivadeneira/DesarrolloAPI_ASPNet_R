@@ -17,7 +17,7 @@ La extensión Thunder en Visual Studio Code facilita la realización de solicitu
 
 ### Conexión a la Base de Datos
 
-### Se realizó una conexión con la base de datos de SQL Server a través de un contenedor Docker. Esto permite realizar operaciones CRUD en la tabla de productos desde la API.###
+### Se realizó una conexión con la base de datos de SQL Server a través de un contenedor Docker. Esto permite realizar operaciones CRUD en la tabla de productos desde la API.
 
 <img src="Evidencias/Evidencia_BD_Lista.png" alt="Evidencia1" width="600"/><br>
 
@@ -74,20 +74,7 @@ La seguridad en la API se ha implementado utilizando middleware y tokens JWT (JS
 
 Este proyecto implementa una API RESTful segura utilizando ASP.NET Core, aplicando prácticas avanzadas de autenticación y middleware.
 
-## Configuración del Proyecto
-
-- Crea un nuevo proyecto ASP.NET Core con el patrón de diseño MVC.
-- Configura el middleware de autenticación para utilizar tokens JWT.
-
-## Implementación de la API RESTful
-
-- Desarrolla al menos dos controladores que gestionen operaciones CRUD en entidades específicas.
-- Utiliza atributos como [Authorize] para asegurar que las operaciones requieran autenticación.
-
-## Seguridad y Middleware
-
-- Implementa middleware personalizado para registrar las solicitudes a la API antes y después del procesamiento.
-- Explora la configuración de políticas de autorización para controlar el acceso a ciertos recursos.
+- Se tilizó atributos como [Authorize] para asegurar que las operaciones requieran autenticación.
 
 ## Documentación de la API
 
@@ -101,7 +88,7 @@ Este proyecto implementa una API RESTful segura utilizando ASP.NET Core, aplican
 
   <img src="Evidencias/Evidencia_FuncionamientoGetPagina.png" alt="Evidencia1" width="600"/><br>
 
-##Elaborado por:
+## Elaborado por:
 Ricardo Rivadeneria
 
 ## Recursos Adicionales
